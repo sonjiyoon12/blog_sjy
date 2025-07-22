@@ -1,0 +1,23 @@
+{{> layout/header}}
+
+<div class="container d-flex justify-content-center align-items-center p-5" style="margin-top: 100px;">
+
+    <div class="card d-flex flex-column" style="width: 500px; height: 420px">
+        <div class="card-header text-center fs-4" style="padding: 30px 0;">
+            <b>로그인을 해주세요</b>
+        </div>
+        <div class="card-body d-flex flex-column justify-content-center">
+            <form action="/login" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="username" name="username" value="ssar">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control form-control-lg" placeholder="password" name="password" value="1234">
+                </div>
+                <button type="submit" class="btn btn-success btn-lg form-control">로그인</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{> layout/footer}}
